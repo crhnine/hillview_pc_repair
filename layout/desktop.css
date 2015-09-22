@@ -1,0 +1,298 @@
+﻿/****************************/
+/*******SET DEFAULTS*********/
+/*HEADER*/
+.mobile_header_container{
+
+    display:none;
+}
+
+.tablet_header_container{
+
+    display:none;
+}
+
+/*NAV*/
+/*Comment out the original css selector and styling*/
+/*#selected_link{
+
+    color:red;
+}*/
+
+.tablet_nav{
+
+    display:none;
+}
+
+.tablet_nav_container{
+
+    display:none;
+
+}
+
+#tablet_float_nav{
+
+    display:none;
+}
+
+.mobile_nav{
+
+    display:none;
+}
+/*BODY*/
+.tablet_body_container{
+
+    display:none;
+}
+
+.mobile_body_container{
+
+    display:none;
+}
+/*FOOTER*/
+.mobile_footer_container{
+
+    display:none;
+}
+
+.tablet_footer_container{
+
+    display:none;
+}
+
+.tablet_footer_copyright_container{
+
+    display:none;
+}
+
+/****************************/
+/********  DESKTOP  *********/
+/****************************/
+
+a {
+
+    text-decoration:none;
+    color:white;
+}
+
+a:hover{
+    
+    color:red;
+}
+
+/************** HEADER *********************/
+.header_container{
+
+    width:100%;
+    height:115px;
+    /*border-top:3px solid red;*/
+    background-color:#1e1e1e;
+}
+
+.information_container{
+
+    width:85%;
+    height:100%;
+    margin:0 auto;
+    padding:30px 10px 15px 10px;
+
+}
+
+.company_name{
+
+    width:33%;
+    height:60px;
+    color:#fff;
+    float:left;
+    font-size:2em;
+    font-weight:700;
+    text-align:left;
+    padding:5px 0px 0px 5px;
+
+}
+
+.company_contact{
+
+    width:66%;
+    height:60px;
+    color:#fff;
+    float:left;
+    font-size:1.2em;
+    font-weight:500;
+    text-align:right;
+    padding:12px 0px 0px 5px;
+}
+
+
+/***************************************/
+/***************************************/
+/**************  NAV  ******************/
+
+nav{
+
+    width:100%;
+    height:45px;
+    margin:15px 0px 5px 0px;
+}
+
+#js_scroll_disappear{
+
+    display:block;
+}
+
+#desktop_float_nav{
+
+    display:none;
+    z-index:9999;
+    position:fixed;
+    top:0px;
+    width:100%;
+    height:45px;
+    
+}
+
+.navigation_block{
+
+    width:85%;
+    margin:0 auto;
+    height:30px;    
+}
+
+.nav_link{
+
+    width:100px;
+    float:left;
+    margin-right:15px;
+    height:30px;
+}
+
+.nav_container{
+
+   
+}
+
+nav .nav_container ul a li{
+
+    color:#900303;
+    float:left;
+    font-weight:500;
+    font-size:1.5em;
+}
+
+nav .nav_container ul a li:hover {
+    color: red;
+}
+
+#logout_selected{
+
+    color:red;
+}
+
+#logout_selected_02{
+
+    color:red;
+}
+
+
+/*********************************************************/
+/*********************************************************/
+/***********************  FOOTER  ************************/
+
+.footer_container{
+
+    clear:both;
+    width:100%;
+    height:300px;
+    /*border-top:3px solid red;*/
+    background-color:#1e1e1e;
+    margin-top:50px;
+}
+
+.footer_information{
+
+    width:85%;
+    height:100%;
+    margin:0 auto;
+    
+}
+
+.footer_quarter{
+
+    width:24%;
+    height:90%;
+    float:left;
+    text-align:center;
+    color:#fff;
+}
+
+.footer_half{
+
+    width:50%;  
+    height:90%;
+    float:left;
+    text-align:center;
+    color:#fff;
+}
+
+.footer_title{
+
+    width:90%;
+    margin:0 auto;
+    margin-top:10px;
+    border-bottom:1px solid #ccc;
+}
+
+.footer_content_shell{
+
+
+}
+
+.footer_content_shell ul{
+
+    text-align:left;
+    list-style:none;
+    margin-left:-15px;
+}
+
+.footer_content_shell ul li{
+
+    margin-bottom:15px;
+
+}
+
+/****************************/
+.footer_copyright_container{
+
+    width:100%;
+    height:100px;
+    background-color:#1e1e1e;
+    color:#fff;
+    border-top:1px solid #ccc;
+    margin-top:-10px;
+}
+
+.footer_copyright_shell1{
+
+    width:45%;
+    float:left;
+    height:100%;
+}
+
+.footer_copyright_shell2{
+
+    width:45%;
+    float:right;
+    height:100%;
+    text-align:right;
+}
+
+.footer_copyright{
+
+    margin-left:10px;
+    margin-top:40px;
+}
+
+.footer_company_name{
+
+    margin-right:10px;
+    margin-top:40px;
+}

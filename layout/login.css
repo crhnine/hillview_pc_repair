@@ -1,0 +1,58 @@
+﻿body
+{
+}
+
+input{
+    height:35px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border:1px solid #ccc;
+
+    
+}
+
+input:focus{
+
+    outline:none;
+    height: 35px;
+    border:1px solid #ccc;
+    /*box-shadow: 2px 0px 0px 1px #888888 inset;
+    -webkit-box-shadow: 2px 0px 0px 1px #888888 inset;
+    -moz-box-shadow: 2px 0px 0px 1px #888888 inset;*/
+    /*padding:2px 1px;*/
+}
+
+.reset{
+
+    width:50px;
+    height:25px;
+    margin-top:0px;
+    margin-left:-2px;
+}
+
+#welcome_post {
+
+    font-family: 'Londrina Shadow', cursive;
+    font-size:42px;
+
+}
+
+#login_form_button1 {
+
+    font-family: 'Londrina Shadow', cursive;
+    font-size:36px;
+    cursor:pointer;
+    margin-top:40px;
+    
+}
+
+
+#login_form_button2 {
+
+    font-family: 'Londrina Shadow', cursive;
+    font-size:36px;
+    cursor:pointer;
+    margin-top:40px;
+    
+}

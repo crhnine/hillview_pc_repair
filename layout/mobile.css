@@ -1,0 +1,227 @@
+﻿/****************************/
+/********  MOBILE  **********/
+/****************************/
+@media screen and (min-width:150px) and (max-width:737px) {
+
+    /******SET MOBILE DEFAULTS VISIBLE *******/
+    
+    a {
+
+        text-decoration:none;
+        color:white;
+    }
+
+    a:hover{
+    
+        color:red;
+    }
+
+    .header_container{
+
+        display:none;
+    }
+
+    .tablet_header_container{
+
+        display:none;
+    }
+
+    .desktop_nav_container{
+
+        display:none;
+    }
+
+    .tablet_nav_container{
+
+        display:none;
+    }
+
+    .tablet_nav {
+    
+       display:none;
+    }
+
+    .desktop_body_container{
+
+        display:none;
+    }
+
+    .tablet_body_container{
+
+        display:none;
+    }
+
+    .footer_container{
+
+        display:none;
+    }
+
+    .tablet_footer_container{
+
+        display:none;
+    }
+
+    .tablet_footer_copyright_container{
+
+        display:none;
+    }
+
+    /***********************************************/
+    /*MOBILE HEADER*/
+    /***********************************************/
+
+
+     .mobile_header_container{
+
+        display:block;
+        height:215px;
+        width:100%;
+        background-color:#1e1e1e;
+        border-top:3px solid red;
+    }
+
+    .mobile_information_container{
+
+        width:95%;
+        height:100%;
+        margin:0 auto;
+        margin-top:25px;
+    }
+
+    .mobile_company_name{
+
+        font-size:2em;
+        text-align:center;
+        margin:0 auto;
+
+    }
+
+    .mobile_company_phone{
+
+        color:white;
+        font-size:1.2em;
+        text-align:center;
+        margin-top:15px;
+       
+    }
+
+    .mobile_company_email{
+
+        text-align:center;
+        font-size:1.2em;
+        margin-top:10px;
+    }
+
+    .mobile_version{
+
+        width:222px;
+        height:43px;
+        margin:0 auto;
+        margin-top:10px;
+    }
+
+    /***********************************************/
+    /*MOBILE NAVIGATION DESIGN*/
+    /***********************************************/
+
+    .mobile_nav{
+
+        display:block;
+        
+    }
+
+    .mobile_nav_container{
+
+        width:95%;
+        margin:0 auto;
+        margin-top:25px;
+
+    }
+
+    .mobile_nav_container select{
+
+        width:75%;
+        margin-left:12.5%;
+        background-color:#1e1e1e;
+        color:white;
+        height:40px;
+
+    }
+   /***********************************************/
+   /*MOBILE BODY*/  
+   /***********************************************/
+
+   .mobile_body_container{
+
+       display:block;
+   }
+
+   .mobile_intro_paragraph{
+
+       text-align:center;
+   }
+
+   /***********************************************/
+   /*MOBILE FOOTER*/  
+   /***********************************************/
+
+    .mobile_footer_container{
+
+        display:block;
+        width:100%;
+        height:350px;
+        background-color:#1e1e1e;
+        border-top:3px solid red;
+    }
+
+    .mobile_footer_text_navigation{
+
+        width:100%;
+        height:200px;
+        border-bottom:1px solid #ccc;
+        color:#fff;
+        text-align:center;
+
+    }
+
+    .mobile_footer_copyright_container{
+
+        
+        width:100%;
+        height:100px;
+        background-color:#232323;
+        color:#fff;
+        
+
+    }
+
+    .mobile_footer_copyright_shell1{
+
+
+    }
+
+    .mobile_footer_copyright{
+
+        float:left;
+        width:100%;
+        text-align:center;
+        color:#fff;
+
+
+    }
+
+    .mobile_footer_copyright_shell2{
+
+      
+    }
+
+    .mobile_footer_company_name{
+
+        float:left;
+        width:100%;
+        text-align:center;
+        margin-top:25px;
+    }
+
+
+}
