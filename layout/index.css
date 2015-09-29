@@ -117,3 +117,36 @@ footer{
 .footer_container{
 
 }
+
+
+/*  Tablet
+======================================*/
+
+.tablet_index_content{
+
+    width:70%;
+    height:250px;
+    margin-top:30px;
+    box-sizing:border-box;
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:50px;
+    border-left:1px solid #427cf9;
+    border-right:1px solid #427cf9;
+    -webkit-border-radius: 15%;
+    -moz-border-radius: 15%;
+    border-radius: 15%;
+    margin: 0 auto;
+    margin-right:3%;
+}
+
+.tablet_index_content:hover{
+
+    background-color:rgba(149,180,250,0.5);
+}
+
+
+
+/* Mobile
+=================================*/
+

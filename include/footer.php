@@ -190,9 +190,9 @@
                    echo 
                    '
                    <li class="tablet_gallery_block" style="margin-left:12px;">
-                   <a id="admin_target" href="../content/'.$info['image'].'">
+                   <a id="admin_target" href="content/'.$info['image'].'">
                    <div class="not_cell" style="width:120px;height:60px;overflow:hidden;float:left;margin-left:5px;margin-top:5px;">
-                   <img id="admin_target_img" src="../content/'.$info['image'].'" width="100%"/>   
+                   <img id="admin_target_img" src="content/'.$info['image'].'" width="100%"/>   
                    </div>
                    </a>
                    </li>
@@ -223,7 +223,19 @@
 
    <div class="mobile_footer_text_navigation">
        <h4 class="mobile_footer_title">Site Navigation</h4>
-   
+                <div class="mobile_footer_content_shell">
+
+                <ul class="mobile_footer_navigation">
+                        <li style="margin:0 auto;">
+                            <ul>
+                                <a href="index.php"><li class="mobile_footer_button">Home</li></a>
+                                <a href="content/about.php"><li class="mobile_footer_button">About</li></a>
+                                <a href="content/gallery.php"><li class="mobile_footer_button">Gallery</li></a>
+                            </ul>
+                    </li>
+                </ul> 
+                </div>
+
    
    </div>
    <div class="mobile_footer_copyright_container">

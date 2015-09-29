@@ -123,13 +123,15 @@
 
     <script type="text/javascript">
    
-         
+<!-- Assembly for random color generation          -->
     
         var red = Math.floor(Math.random() * 256);
         var green = Math.floor(Math.random() * 256);
         var blue = Math.floor(Math.random() * 256);
         rgbcolor = 'rgb(' + red + ',' + green + ',' + blue + ')';
         
+<!--      Desktop Versions    -->
+
         document.getElementById("content_header1_js_styling").style.borderTopWidth = "3px";
         document.getElementById("content_header1_js_styling").style.borderTopStyle = "solid";
         document.getElementById("content_header1_js_styling").style.borderTopColor = rgbcolor;
@@ -143,11 +145,13 @@
         document.getElementById("content_footer2_js_styling").style.borderTopColor = rgbcolor;
         
         document.getElementById("welcome_post").style.color = rgbcolor;
-        document.getElementById("username").style.color = rgbcolor;
-        document.getElementById("password").style.color = rgbcolor;
-        document.getElementById("login_form_button1").style.color = rgbcolor;
-        document.getElementById("login_form_button2").style.color = rgbcolor;
-        
+
+
+<!--      Tablet Versions    -->
+ 
+       
+       
+ <!--     Mobile Versions  -->       
  
         
         
@@ -156,7 +160,7 @@
 
 <!-- TABLET -->
 
-<div class="tablet_footer_container">
+<div class="tablet_footer_container" style="margin-top:35px;">
     <div class="mobile_tablet_top_shell">
     
         <div class="tablet_footer_text_navigation">
@@ -166,10 +170,7 @@
                 
                     <a href="../index.php"><li>Home</li></a>
                     <a href="about.php"><li>About</li></a>
-<!--                <li>About Websites</li>
-                    <li>About Repairs</li> -->
                     <a href="gallery.php"><li>Gallery</li></a>
-<!--                <a href="login.php"><li>Admin</li></a> -->
                     
                 </ul>           
             </div>
@@ -217,7 +218,19 @@
 
    <div class="mobile_footer_text_navigation">
        <h4 class="mobile_footer_title">Site Navigation</h4>
-   
+                <div class="mobile_footer_content_shell">
+
+                <ul class="mobile_footer_navigation">
+                        <li style="margin:0 auto;">
+                            <ul>
+                                <a href="../index.php"><li class="mobile_footer_button">Home</li></a>
+                                <a href="about.php"><li class="mobile_footer_button">About</li></a>
+                                <a href="gallery.php"><li class="mobile_footer_button">Gallery</li></a>
+                            </ul>
+                    </li>
+                </ul> 
+                </div>
+
    
    </div>
    <div class="mobile_footer_copyright">

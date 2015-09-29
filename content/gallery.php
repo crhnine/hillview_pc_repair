@@ -15,11 +15,13 @@ if($search_filter != "")
 {
 $sql = mysql_query("SELECT image FROM gallery ORDER by id DESC")or die(mysql_error());
 $sql3 = mysql_query("SELECT image FROM gallery ORDER by id DESC")or die(mysql_error());
+$sql5 = mysql_query("SELECT image FROM gallery ORDER by id DESC")or die(mysql_error());
 }
 else
 {
 $sql = mysql_query("SELECT image FROM gallery ORDER by id DESC")or die(mysql_error());
 $sql3 = mysql_query("SELECT image FROM gallery ORDER by id DESC")or die(mysql_error());
+$sql5 = mysql_query("SELECT image FROM gallery ORDER by id DESC")or die(mysql_error());
 }
 $nr = mysql_num_rows($sql); // GET TOTAL RESULTS FROM YOUR QUERY HERE
 if (isset($_GET['pn'])) { // Get PAGE NUMBER from URL vars if it is present
@@ -70,11 +72,13 @@ if($search_filter != "")
 {
 $sql2 = mysql_query("SELECT image FROM gallery ORDER by id DESC $limit");
 $sql4 = mysql_query("SELECT image FROM gallery ORDER by id DESC $limit");
+$sql6 = mysql_query("SELECT image FROM gallery ORDER by id DESC $limit");
 }
 else
 {
 $sql2 = mysql_query("SELECT image FROM gallery ORDER by id DESC $limit");
 $sql4 = mysql_query("SELECT image FROM gallery ORDER by id DESC $limit");
+$sql6 = mysql_query("SELECT image FROM gallery ORDER by id DESC $limit");
 }
 //////////////////////////////// END Adam's Pagination Logic ////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////// Adam's Pagination Display Setup /////////////////////////////////////////////////////////////////////
@@ -103,7 +107,7 @@ $outputList = '';
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-
+    <meta name="description" content="Looking for inexpensive and quality repairs, network setups, or website designs? You came to the right place. ;)" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link href="../layout/normalize.css" rel="stylesheet" type="text/css" />
@@ -162,7 +166,7 @@ margin-left:0px;padding-left:0px;
           <figcaption class="gallery_description" style="">
             <p>This gallery reflects all work done in repairs and website builds. This website itself speaks for...well...itself.</p>
             <p>Please understand that all prices listed for previous work, should there be any associated with these pictures, was specific to that product/customer's need. Some parts cost more, some projects take longer (shipping from China i.e.), but all in all my goal is to provide you excellent service without
-            having to face large enterprise pricing. Check the <a href="about.php" style="color:black;">About</a> section for more details.</p>
+            having to face large enterprise pricing.<!--  Check the <a href="about.php" style="color:black;">About</a> section for more details. --></p>
           </figcaption>
         </figure>
       </section>
@@ -211,7 +215,7 @@ margin-left:0px;padding-left:0px;
           <figcaption class="gallery_description" style="">
             <p>This gallery reflects all work done in repairs and website builds. This website itself speaks for...well...itself.</p>
             <p>Please understand that all prices listed for previous work, should there be any associated with these pictures, was specific to that product/customer's need. Some parts cost more, some projects take longer (shipping from China i.e.), but all in all my goal is to provide you excellent service without
-            having to face large enterprise pricing. Check the <a href="about.php" style="color:black;">About</a> section for more details.</p>
+            having to face large enterprise pricing.<!--  Check the <a href="about.php" style="color:black;">About</a> section for more details. --></p>
           </figcaption>
         </figure>
       </section>
@@ -234,6 +238,55 @@ margin-left:0px;padding-left:0px;
 
     <div class="mobile_body_container">
 
+
+
+
+
+
+
+<div id="mobile_gallery">
+      <section>
+        <figure>
+        <div class="mobile_gallery_caption">
+          
+        <h2>Current and past projects</h2>
+
+          <figcaption class="mobile_gallery_description" style="">
+            <p>This gallery reflects all work done in repairs and website builds. This website itself speaks for...well...itself.</p>
+            <p>Please understand that all prices listed for previous work, should there be any associated with these pictures, was specific to that product/customer's need. Some parts cost more, some projects take longer (shipping from China i.e.), but all in all my goal is to provide you excellent service without
+            having to face large enterprise pricing.<!--  Check the <a href="about.php" style="color:black;">About</a> section for more details. --></p>
+          </figcaption>
+<br /><br />
+          
+        </div>
+          <ul class="clear">
+            <?php while($info = mysql_fetch_array($sql6))
+                        {
+
+                        ///  get our variables from the database
+
+                        $image = $info['image'];
+                        /// show data on page
+                       ?>
+                          
+                            <li class="mobile_gallery_image_layout"><a href="<?php echo $image; ?>"><img src="<?php echo $image; ?>" style="width:100%;"/></a></li>
+                            
+                         <?php
+                        }
+                        ?> 
+          </ul>
+
+        </figure>
+      </section>
+
+            <div style="width:200px;margin:0px auto;">
+                        <div style="margin:0px auto;">
+                             <h2>Total Items: <?php echo $nr; ?></h2>
+                        </div>                   
+                        <li class="prev" style="list-style:none;"><?php echo $paginationDisplay; ?></li>
+            </div>
+      
+</div>
 
 
     </div>

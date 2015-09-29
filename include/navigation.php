@@ -90,11 +90,11 @@
     
    <div class="mobile_nav_container">
    
-    <select onchange="window.location=this.value">
+    <select id="mobile_nav_menu">
     
-       <option value="index.php">Home</option>
-       <option value="content/about.php">About</option>
-       <option value="content/gallery.php">Gallery</option>
+       <option id="index-nav" value="#">Home</option>
+       <option id="about-nav" value="#">About</option>
+       <option id="gallery-nav" value="#">Gallery</option>
 
     </select>
     
@@ -122,6 +122,11 @@ if(url == "/hillview_002/index.php"){
         document.getElementById('tablet_about').href = "content/about.php";
         document.getElementById('tablet_gallery').href = "content/gallery.php";
 
+        document.getElementById('index-nav').value = "index.php";
+        document.getElementById('index-nav').selected = true;
+        document.getElementById('about-nav').value = "content/about.php";
+        document.getElementById('gallery-nav').value = "content/gallery.php";
+
 }
 if(url == "/hillview_002/content/gallery.php"){
 
@@ -136,6 +141,11 @@ if(url == "/hillview_002/content/gallery.php"){
         document.getElementById('tablet_index').href = "../index.php";
         document.getElementById('tablet_about').href = "about.php";
         document.getElementById('tablet_gallery').href = "gallery.php";
+
+        document.getElementById('index-nav').value = "../index.php";
+        document.getElementById('about-nav').value = "about.php";
+        document.getElementById('gallery-nav').value = "gallery.php";
+        document.getElementById('gallery-nav').selected = true;
 }
 
 if(url == "/hillview_002/content/about.php"){
@@ -150,5 +160,23 @@ if(url == "/hillview_002/content/about.php"){
         document.getElementById('tablet_about').href = "about.php";
         document.getElementById('tablet_gallery').href = "gallery.php";
 
+        document.getElementById('index-nav').value = "../index.php";
+        document.getElementById('about-nav').value = "about.php";
+        document.getElementById('about-nav').selected = true;
+        document.getElementById('gallery-nav').value = "gallery.php";
+        
+
 }
+</script>
+
+<script type="text/javascript">
+
+    $('#mobile_nav_menu').on('change' , function(){
+        var pageName = $(this).find(':selected').text();
+        var newPage = $(this).val();
+
+        window.location.href = newPage;
+
+});
+
 </script>

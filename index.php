@@ -1,3 +1,4 @@
+
 <?php
 if($_SESSION["admin_id"] = '1'){
 session_start();
@@ -11,9 +12,11 @@ else{
 $con = mysql_connect("$host", "$username", "$password")or die("cannot connect");
 $db = mysql_select_db("$db_name")or die("can not select DB");
 ?>
+<!-- Above Code, and on all pages it is included, is for future additions to the site. -->
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
+    <meta name="description" content="Looking for inexpensive and quality repairs, network setups, or website designs? You came to the right place. ;)" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link href="layout/normalize.css" rel="stylesheet" type="text/css" />
@@ -51,9 +54,9 @@ all navigation files except -->
        <div><img src="images/laptop_focus.jpg" alt="laptop background" id="backdrop_image" /></div>
 
        <div class="googleapi_container">
-                <div>
+ <!--                <div>
                 <button style="margin:0 auto;margin-top:15px;margin-left:15px;font-family: 'Open Sans Condensed', sans-serif;">Geolocation Services</button>
-                </div>
+                </div> -->
                 <div id="map"></div>
                 <script src="https://maps.googleapis.com/maps/api/js?signed_in=true&callback=initMap"
                     async defer>
@@ -122,11 +125,7 @@ all navigation files except -->
                    <?php include 'include/js/js_slider/demos-jquery/content-slider.source.html' ;?>
 
         </div>
-<!--         <div style="width:40%;float:right;height:450px;border-bottom:1px solid #ccc;margin-bottom:30px;">
 
-            <img src="" alt="" />
-        
-        </div> -->
 
 
 
@@ -163,34 +162,101 @@ all navigation files except -->
        </div>
     </div>
 
-    <div class="tablet_body_container">
+
+
+
+    <div class="tablet_body_container" >
          
-         <div class="tablet_intro_paragraph">
+         <div class="tablet_intro_paragraph" >
          
-         <h4>Welcome to the tablet version!</h4>
-         <h5>Please note there are major differences between this version, mobile, and desktop/laptop versions. If this is not the proper version alert me to which device you are using and which version you are seeing and I will work on fixing the problem. Thank you for visiting!</h5>
+                    
+            <div style="background-color:white;width:100%;height:800px;box-sizing:border-box;padding-top:15px;padding-bottom:15px;">
+                <div style="width:90%;margin:0 auto;height:100%;margin-top:25px;">
+
+                <div style="width:85%;">
+
+                <div style="width:100%">
+                <div style="float:left;width:10%;">
+                    <img src="images/glyphicons-handshake.png" alt="handshake icon" style="margin-top:100px;margin-left:125px;" />
+                </div>
+                <div class="tablet_index_content" style="float:right;margin-right:-100px;">
+
+                <h3 class="content_text">Technology Solutions</h3>
+                    <p class="content_text2">Computer and mobile device repairs to get you back to work. Screen replacements, local area network setup, firewall adjustments, and more! Check out the gallery for HPCR's previous projects.</p>
+
+                </div>
+                </div>
+
+                <div style="width:100%">
+      
+                <div class="tablet_index_content" style="float:left;">
+
+                <h3 class="content_text">Web design for User Experience</h3>
+                <p class="content_text2">Reach your visitors in a classy, well organized, and efficient way utilizing the world's largest advertising platform the web. Get in person help with building a wireframe for your project and then have it developed.</p>
+     
+                </div>
+                <div style="float:right;width:10%">
+                    <img src="images/glyphicons-family.png" alt="family icon" style="margin-top:110px;" />
+                </div>
+
+                </div>
+
+                <div style="width:100%">
+
+                <div class="tablet_index_content" style="float:right;margin-right:-100px;">
+
+                <h3 class="content_text">Business Solutions for Business Professionals</h3>
+                    <p class="content_text2">The web can be a powerful tool for offsite hosting of your business applications. No need to install on every machine. Let the web do the work for you! Applications that can drive your business to success.</p>
+                </div>
+                <div style="float:left;width:10%">
+                    <img src="images/glyphicons-charts.png" alt="bar chart icon" style="margin-top:80px;margin-left:125px;" />
+                </div>
+                </div>
+
+                </div>
+                </div>
+            </div>
+
          </div>
 
     </div>
 
-    <div class="mobile_body_container">
 
-        <div class="mobile_intro_paragraph">
-        
-        <h4>Welcome to the mobile version!</h4>
-        <h5>Please note there are major differences between this version, tablet, and desktop/laptop versions. If this is not the proper version alert me to which device you are using and which version you are seeing and I will work on fixing the problem. Thank you for visiting!</h5>
-        
-        </div>
-        
-        <div>
-        
-           <div></div>
-           <div></div>
-           
-           
-        </div>
 
+
+
+
+<div class="mobile_body_container">
+
+    <div class="mobile_index_content_block">
+        <div style="width:50px;margin:0 auto;"><img src="images/glyphicons-handshake.png" alt="handshake icon" /></div>
+            <div class="mobile_index_panel">
+            <h3 class="content_text">Technology Solutions</h3>
+            <p class="content_text2">Computer and mobile device repairs to get you back to work. Screen replacements, local area network setup, firewall adjustments, and more! Check out the gallery for HPCR's previous projects.</p>
+        </div>
     </div>
+
+    <div class="mobile_index_content_block">
+        <div style="width:50px;margin:0 auto;"><img src="images/glyphicons-family.png" alt="family icon" /></div>
+            <div class="mobile_index_panel">
+            <h3 class="content_text">Web design for User Experience</h3>
+            <p class="content_text2">Reach your visitors in a classy, well organized, and efficient way utilizing the world's largest advertising platform the web. Get in person help with building a wireframe for your project and then have it developed.</p>
+        </div>
+    </div>
+
+    <div class="mobile_index_content_block">
+        <div style="width:50px;margin:0 auto;"><img src="images/glyphicons-charts.png" alt="handshake icon" /></div>
+            <div class="mobile_index_panel">
+            <h3 class="content_text">Business Solutions for Business Professionals</h3>
+            <p class="content_text2">The web can be a powerful tool for offsite hosting of your business applications. No need to install on every machine. Let the web do the work for you! Applications that can drive your business to success.</p>
+        </div>
+    </div>
+
+</div>
+
+
+
+<!-- End content area -->
 </section>
 
 
