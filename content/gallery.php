@@ -370,15 +370,13 @@ if(url == "/hillview_002/content/gallery.php"){
    document.getElementById("index").href = "../index.php";
    document.getElementById("about").href = "about.php";
    document.getElementById("gallery").href = "gallery.php";
-   document.getElementById("logout").href = "../admin/logout_function.php";
-   document.getElementById("admin").href = "../admin/admin.php";
+
    
    document.getElementById("gallery_selected_02").style.color = "red";
    document.getElementById("index_02").href = "../index.php";
    document.getElementById("about_02").href = "about.php";
    document.getElementById("gallery_02").href = "gallery.php";
-   document.getElementById("logout_02").href = "../admin/logout_function.php";
-   document.getElementById("admin_02").href = "../admin/admin.php";
+
 }
 
     

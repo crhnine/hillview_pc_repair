@@ -274,21 +274,10 @@ all navigation files except -->
         var ypos, image;
 
         function parallax() {
-
-
             ypos = window.pageYOffset;
 
             backdrop_image = document.getElementById('backdrop_image');
             backdrop_image.style.top = ypos * .8 + 'px';
-
-            header = document.getElementById('header_container');
-            header_container.style.top = ypos * .8 + 'px';
-
-            nav = document.getElementById('desktop_nav_container');
-            desktop_nav_container.style.top = ypos * .8 + 'px';
-
-            footer = document.getElementById('footer_container');
-            footer_container.style.top = ypos * .8 + 'px';
         }
 
         window.addEventListener('scroll', parallax)
@@ -366,14 +355,14 @@ all navigation files except -->
                document.getElementById("about").href = "content/about.php";
                document.getElementById("gallery").href = "content/gallery.php";
                <!-- document.getElementById("logout").href = "admin/logout_function.php"; -->
-               document.getElementById("admin").href = "admin/admin.php"; 
+               <!-- document.getElementById("admin").href = "admin/admin.php";  -->
    
                
                document.getElementById("index_02").href = "index.php";
                document.getElementById("about_02").href = "content/about.php";
                document.getElementById("gallery_02").href = "content/gallery.php";
                <!-- document.getElementById("logout_02").href = "admin/logout_function.php"; -->
-               document.getElementById("admin_02").href = "admin/admin.php"; 
+               <!-- document.getElementById("admin_02").href = "admin/admin.php";  -->
             } 
     </script>
 
